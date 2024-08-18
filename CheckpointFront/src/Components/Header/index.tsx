@@ -1,4 +1,5 @@
 import React from "react";
+import logoHeader from "../../assets/Vector-2.png"
 import './style.css'
 
 const Header : React.FC = () => {
@@ -6,7 +7,7 @@ const Header : React.FC = () => {
         <>
             <div className="container">
                 <div className="logo_icon">
-                    <a href="#"><img src="../assets/Group.png" alt="Icone do logo" /></a>
+                    <a href="#"><img src={logoHeader} alt="Icone do logo"/></a>
                 </div>
                 <nav className="nav_bar">
                     <img src="" alt="" />

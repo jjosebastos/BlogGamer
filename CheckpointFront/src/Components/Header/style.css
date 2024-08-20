@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 32px 100px;
+    margin: 32px 100px  ;
 }
 
 .logo_icon {
@@ -12,4 +12,75 @@
 .logo_icon a > img{
     height: 64px;
     width: 165px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar > img {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.nav_bar > span {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.search_bar {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 16px 32px;
+    justify-content: space-between;
+    background-color: 
+    #1B1D23;
+}
+
+#input_search {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+    background-color: #1B1D23;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Karla, sans-serif;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: 100;
+}
+
+.search_bar > a {
+    border: none;
+    outline: none;
+    background-color: #1B1D23;
+}
+.search_bar  > a > img {
+
+    border: none;
+    outline: none;
+    background-color: #1B1D23;
+    font-size: 24px;
+    padding-right: 14px;
+    
+}
+
+.login_bar {
+    display: flex;
+} 
+.login_bar > button {
+    border-radius: 8px;
+    outline: none;
+    background-color: #D5224E;
+    border: none;
+    padding: 16px 64px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
 }

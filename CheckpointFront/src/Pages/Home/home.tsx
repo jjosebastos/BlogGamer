@@ -1,14 +1,12 @@
-import Header from "../../Components/Header";
+import Banner from "../../Components/Banner";
 import Footer from "../../Components/Footer";
-import Banner from "../../Components/Banner"
-export default function Home(){
+import Header from "../../Components/Header";
+export default function Home() {
 
     return (
         <>
             <Header />
-            <main>
-                <Banner />
-            </main>
+            <Banner />
             <Footer />
 
         </>

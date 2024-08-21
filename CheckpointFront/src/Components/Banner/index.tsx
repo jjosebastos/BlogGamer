@@ -1,30 +1,29 @@
+import estrela from '../../assets/estrela.png';
+import estrelaVoid from '../../assets/estrela_void.png';
+import './style.css';
 
-
-const Banner : React.FC = () => {
-
+const Banner: React.FC = () => {
     return (
-        <>
-            <section className="banner">
-                <div className="game_title">
-                    <h1>
-                        God of War: RAGNAROK
-                    </h1>
-                </div>
-                <div className="game_ratings">
-                    <span>Avaliacao da ratings</span>
-                    <ul>
-                        <li> 9,6/10</li>
-                    </ul>
-                </div>
-                <div className="game_ratings">
-                    <span>Avaliacao da ratings</span>
-                    <ul>
-                        <li>avaliar</li>
-                    </ul>
-                </div>
-            </section>
-        </>
-    )
+        <section className="banner">
+            <div className="game_name_ratings">
+                <h1>God of War: Ragnarök</h1>
+            </div>
+            <article className="container_ratings">
+                <h2>AVALIAÇÃO DA RATINGS</h2>
+                <p className='notes'>
+                    <img src={estrela} alt="Rating Star" className="star-icon" />
+                    9,6<span className='notes_lower'>/10</span>
+                </p>
+            </article>
+            <article className="container_ratings">
+                <h2>SUA AVALIAÇÃO</h2>
+                <p className='notes'>
+                    <img src={estrelaVoid} alt="Rate" className="star-icon" />
+                    Avaliar
+                </p>
+            </article>
+        </section>
+    );
 };
 
 export default Banner;

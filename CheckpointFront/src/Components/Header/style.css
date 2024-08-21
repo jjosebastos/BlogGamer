@@ -52,8 +52,13 @@
     cursor: pointer;
     font-family: Karla, sans-serif;
     font-size: 20px;
-    opacity: 1;
+
+}
+
+#input_search::placeholder{
+    color: #787B81;
     font-weight: 100;
+    opacity: 1;
 }
 
 .search_bar > a {

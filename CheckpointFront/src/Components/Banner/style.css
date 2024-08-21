@@ -1,0 +1,60 @@
+.banner {
+    display: flex;
+    background-image: url('../../assets/teste.jfif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.game_name_ratings {
+    width: 60%;
+    color: #fff;
+    font-family: Krona One;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container_ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    
+}
+
+.container_ratings h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: Krona One;
+    color: #fff;
+    
+}
+
+.notes {
+    display: flex;
+    align-items: center;
+    font-family: Krona One;
+    font-size: 18px;
+    color: #fff;
+}
+
+.notes_lower {
+    color: gray;
+    font-weight: 400;
+}
+
+.star-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    gap: 8px ;
+}
+
+.notes_lower {
+    font-size: 16px; /* Ajuste o tamanho do texto após a barra */
+}

@@ -3,9 +3,11 @@ import { createRoot } from 'react-dom/client'
 import Banner from './Components/Banner/index.tsx'
 import Footer from './Components/Footer/index.tsx'
 import Header from './Components/Header/index.tsx'
+import About from './Components/About/index.tsx'
+import UserRatings from './Components/UserRatings/index.tsx'
 import './index.css'
 
-const _router =
+
 
   createRoot(document.getElementById('root')!).render(
 
@@ -13,6 +15,8 @@ const _router =
 
       <Header />
       <Banner />
+      <About />
+      <UserRatings />
       <footer>
         <Footer />
       </footer>

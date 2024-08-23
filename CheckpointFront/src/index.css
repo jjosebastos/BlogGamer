@@ -5,16 +5,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Krona One;
-  background-color: #0E1015;
+  
   color: #fff ;
 }
 body {
   height: 100%;
+  background-color: #0E1015;
+  font-family: 'Krona One', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #787B81;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FF003F;
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   right: 0;
 } 

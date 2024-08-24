@@ -107,3 +107,30 @@
 .interaction_like  > span {
     margin-left: 10px;
 }
+
+
+/** Warning **/
+
+.spoiler_container  {
+    display: flex;
+    background-color: #0E1015;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.warning_header {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FF003F;
+}
+
+.warning_shift > img {
+    cursor: pointer;
+}
+
+.spoiler {
+    display: none;
+}

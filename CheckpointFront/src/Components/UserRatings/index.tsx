@@ -3,7 +3,6 @@ import vetor from '../../assets/Vector-enredo.png'
 import plusSmall from '../../assets/plus.svg'
 import TopRatings from '../TopRatings'
 
-const isSpoiler = false;
 const UserRatings : React.FC = () => {
 
    

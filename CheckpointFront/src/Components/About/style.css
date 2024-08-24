@@ -1,3 +1,33 @@
+
+.banner_cover {
+
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.banner_cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/gowr.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.252; /* Opacidade aplicada apenas na imagem de fundo */
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+.banner {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    padding: 32px 100px;
+}
+
 .enredo_container {
     display: flex;
     padding: 32px 100px;
@@ -24,4 +54,36 @@
     font-weight: 200;
     font-family: Karla;
     line-height: 19px;
+}
+
+.container_images {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    
+}
+
+.game_cover {
+    display: flex;
+    width: 35%;
+}
+
+.game_cover > img {
+    width: 100%;
+    max-height: 500px;
+}
+
+
+.gameplay_cover {
+    display: flex;
+    width: 65%;
+}
+
+.gameplay_cover > img {
+    width: 100%;
+    max-height: 500px;
 }

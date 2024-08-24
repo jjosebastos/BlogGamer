@@ -4,6 +4,9 @@ import like from '../../assets/like.svg'
 import dislike from '../../assets/dislike.svg'
 import dotsVertical from '../../assets/dots-vertical.svg'
 import toggleShift from '../../assets/toggle_shift.svg'
+import { useState } from 'react'
+
+
 
 type PropsTop = {
     ratingTitle: string,
@@ -12,8 +15,10 @@ type PropsTop = {
     username: string,
     date: string,
     ratingComment: string;
+    ratingSecondComment?: string;
     ratingLikes: string;
     ratingDislikes: string;    
+    spoilerAlert: boolean;
 };
 
 const TopRatings: React.FC<PropsTop> = ({
@@ -23,19 +28,31 @@ const TopRatings: React.FC<PropsTop> = ({
     username,
     date,
     ratingComment,
+    ratingSecondComment,
     ratingLikes,
-    ratingDislikes
+    ratingDislikes,
+    spoilerAlert
+    
 }) => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleSpoiler = () => {
+        setIsOpen(!isOpen);
+    }; 
+
     return (
         <section className="top_ratings_container">
             <div className="top_container">
                 <div className="tag_container">
-                    <span>{ratingTitle}</span>
+                    <span>AVALIAÇÃO EM DESTAQUE</span>
                 </div>
                 <div className="star_ratings">
                     <span>
                         <img src={star} alt="Estrela" />
-                        {ratingNote}/{ratingNoteFra}
+                        {ratingNote}/
+                            <span className='fraction'>{ratingNoteFra}<span/>
+                        </span>
                     </span>
                 </div>
             </div>
@@ -48,23 +65,34 @@ const TopRatings: React.FC<PropsTop> = ({
                 </div>
             </div>
 
-            <div className="user_article_container">
-                <div className="user_article_header">
-                    <div className="spoiler_container spoiler">
+            <div className="user_article_header">
+            {spoilerAlert ? (
+                <>
+                    <div className="spoiler_container" onClick={toggleSpoiler}>
                         <div className="warning_container">
-                            <h2 className='warning_header'>
-                                Warning: Spoilers!
-                            </h2>
+                            <h2 className='warning_header'>Warning: Spoilers!</h2>
                         </div>
-                        <div className="warning_shift spoiler">
+                        <div className={`warning_shift ${isOpen ? 'open' : ''}`}>
                             <img src={toggleShift} alt="Seta" />
                         </div>
                     </div>
                     <h2>{ratingTitle}</h2>
                     <br />
-                    <p>{ratingComment}</p>    
-                </div>
-            </div>
+                    <div className={`spoiler_content ${isOpen ? 'open' : ''}`}>
+                        <p className='hidden_p'>{ratingComment}</p>
+                        {ratingSecondComment && <p className='hidden_p'>{ratingSecondComment}</p>}
+                    </div>
+                </>
+            ) : (
+                <>
+                    <h2>{ratingTitle}</h2>
+                    <br />
+                    <p>{ratingComment}</p>
+                    {ratingSecondComment && <p>{ratingSecondComment}</p>}
+                </>
+            )}
+</div>
+
             <div className="container_interaction_icons">
                 <div className="interaction_icons">
                     <div className="interaction_like">

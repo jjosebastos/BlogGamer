@@ -26,6 +26,7 @@
 
 .nav_bar > span {
     font-size: 20px;
+    padding-left: 10px;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -72,7 +73,7 @@
     outline: none;
     background-color: #1B1D23;
     font-size: 24px;
-    padding-right: 14px;
+    padding-right: 8px;
     
 }
 
@@ -83,6 +84,7 @@
     border-radius: 8px;
     outline: none;
     background-color: #D5224E;
+    font-family: Krona One;
     border: none;
     padding: 16px 64px;
     text-transform: uppercase;

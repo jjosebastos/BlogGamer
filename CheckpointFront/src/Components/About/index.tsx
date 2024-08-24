@@ -1,5 +1,5 @@
 import './style.css'
-import vetor from '../../assets/vector-enredo.png'
+import vetor from '../../assets/vector-enredo.png';
 
 
 const About : React.FC = () => {

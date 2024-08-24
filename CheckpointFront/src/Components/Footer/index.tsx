@@ -1,5 +1,5 @@
 import './style.css'
-import logo from "../../assets/logo-ratings.svg"
+import logo from "../../assets/Vector-2.png"
 
 const Footer: React.FC = () => {
     return (

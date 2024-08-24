@@ -1,5 +1,5 @@
 import './style.css'
-import vetor from '../../assets/Vector-enredo.png'
+import vetor from '../../assets/vector-enredo.png'
 import plusSmall from '../../assets/plus.svg'
 import TopRatings from '../TopRatings'
 
